@@ -18,20 +18,20 @@ Examples
 
 **Computing embeddings**
 ```
-# python3 ./bin/compute_embeddings.py -c <collection name> -m <embedding model> -o <output directory>
-python3 ./bin/compute_embeddings.py -c msmarco -m msmarco-distilbert-base-tas-b -o ./vectors/
+# python3 ./bin/01-compute_embeddings.py -c <collection name> -m <embedding model> -f <corpus file> -o <output directory>
+python3 ./bin/01-compute_embeddings.py -c msmarco -m msmarco-distilbert-base-tas-b -f ./collections/collection.tsv -o ./vectors/
 ```
 
 **Computing dimnesion ranking**
 ```
-# python3 ./bin/compute_feats_importance_stat.py -v <vectors file> -m <method> -o <output file>
-python3 ./bin/compute_feats_importance_stat.py -v ./vectors/msmarco-distilbert-base-tas-b_embeddings.full.npy -m var -o ./vectors/dimension_ranking/msmarco-distilbert-base-tas-b_embeddings.var.npy
+# python3 ./bin/02-compute_feats_importance_stat.py -v <vectors file> -m <method> -o <output file>
+python3 ./bin/02-compute_feats_importance_stat.py -v ./vectors/msmarco-distilbert-base-tas-b_embeddings.full.npy -m var -o ./vectors/dimension_ranking/msmarco-distilbert-base-tas-b_embeddings.var.npy
 ```
 
 **Pruned retrieval**
 ```
-# python3 ./bin/pruned_retrieval.py <configuration file>
-python3 ./bin/pruned_retrieval.py ./config/msmarco_dev_small_bge-large.ini
+# python3 ./bin/03-pruned_retrieval.py <configuration file>
+python3 ./bin/03-pruned_retrieval.py ./config/msmarco_dev_small_bge-large.ini
 ```
 The parameters of the runs are contained inside configuration files (which include the corresponding paths for vectors files and outputs)
 
