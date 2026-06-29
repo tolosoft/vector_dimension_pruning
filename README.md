@@ -28,9 +28,10 @@ python3 ./bin/compute_feats_importance_stat.py -v ./vectors/msmarco-distilbert-b
 
 **Pruned retrieval**
 ```
+# python3 ./bin/pruned_retrieval.py <configuration file>
 python3 ./bin/pruned_retrieval.py ./config/msmarco_dev_small_bge-large.ini
 ```
-
+The parameters of the runs are contained inside configuration files (which include the corresponding paths for vectors files and outputs)
 
 
 
