@@ -22,7 +22,7 @@ Examples
 python3 ./bin/01-compute_embeddings.py -c msmarco -m msmarco-distilbert-base-tas-b -f ./collections/collection.tsv -o ./vectors/
 ```
 
-**Computing dimnesion ranking**
+**Computing dimension ranking**
 ```
 # python3 ./bin/02-compute_feats_importance_stat.py -v <vectors file> -m <method> -o <output file>
 python3 ./bin/02-compute_feats_importance_stat.py -v ./vectors/msmarco-distilbert-base-tas-b_embeddings.full.npy -m var -o ./vectors/dimension_ranking/msmarco-distilbert-base-tas-b_embeddings.var.npy
