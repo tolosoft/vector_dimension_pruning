@@ -16,7 +16,16 @@ Source code repository:
 
 
 
+Examples
 
+**Computing embeddings**
+```
+python3 compute_embeddings.py -c msmarco -m msmarco-distilbert-base-tas-b -o ./vectors/
+```
+
+**Computing dimnesion ranking**
+
+**Pruned retrieval**
 
 ```
 Effective Query-Independent Vector Pruning for Dense Retrieval
