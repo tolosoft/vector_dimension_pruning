@@ -35,6 +35,11 @@ python3 ./bin/03-pruned_retrieval.py ./config/msmarco_dev_small_bge-large.ini
 ```
 The parameters of the runs are contained inside configuration files (which include the corresponding paths for vectors files and outputs)
 
+**Computing evaluation metrics**
+```
+# python3 ./bin/04-compute_evaluation.py --config <configuration file>
+python3 ./bin/04-compute_evaluation.py --config ./config/compute_evaluation.ini
+```
 
 
 
