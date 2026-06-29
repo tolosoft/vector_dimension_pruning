@@ -18,11 +18,13 @@ Examples
 
 **Computing embeddings**
 ```
+# python3 ./bin/compute_embeddings.py -c <collection name> -m <embedding model> -o <output directory>
 python3 ./bin/compute_embeddings.py -c msmarco -m msmarco-distilbert-base-tas-b -o ./vectors/
 ```
 
 **Computing dimnesion ranking**
 ```
+# python3 ./bin/compute_feats_importance_stat.py -v <vectors file> -m <method> -o <output file>
 python3 ./bin/compute_feats_importance_stat.py -v ./vectors/msmarco-distilbert-base-tas-b_embeddings.full.npy -m var -o ./vectors/dimension_ranking/msmarco-distilbert-base-tas-b_embeddings.var.npy
 ```
 
