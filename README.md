@@ -8,10 +8,11 @@ Gabriel Tolosa, Tomás Delvechio and Esteban Rissola
 ### Source code repository: 
 
 ```
-/bin             # Scripts use for experiments 
-/config          # Example configuration files
-/runs            # Output directory
-/vectors         # Dense vectors directory
+vector_dimension_pruning/
+├──bin/             # Scripts use for experiments 
+├──config/          # Example configuration files
+├──runs/            # Output directory
+└──vectors/         # Dense vectors directory
 ```
  
 Examples
